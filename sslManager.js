@@ -220,6 +220,9 @@ var updateSsl = function (_serialNumber, updateSsl) {
 
 var setSslDir = function(dir) {
 	sslDir = dir;
+	if (!fs.existsSync(sslDir)){
+		fs.mkdirSync(sslDir);
+	} 
 	readFiles();
 }
 
