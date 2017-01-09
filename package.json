@@ -1,0 +1,14 @@
+{
+  "name": "ssl-management",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "chai": "^3.5.0",
+    "express": "~4.10.2",
+    "mocha": "^3.2.0"
+  },
+  "script": {
+    "test": "mocha tests --watch",
+	"test-once": "mocha tests"
+  }
+}

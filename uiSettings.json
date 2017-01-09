@@ -1,0 +1,26 @@
+{
+	"parameters" : [
+		{
+			"param" : "issuedTo",
+			"type" : "text",
+			"label" : "Issued To"
+		},
+		{
+			"param" : "issuedBy",
+			"type" : "text",
+			"label" : "Issued By"
+		},
+		{
+			"param" : "validFrom",
+			"type" : "date",
+			"comparator" : "from",
+			"label" : "Valid From"
+		},
+		{
+			"param" : "validTo",
+			"type" : "date",
+			"comparator" : "to",
+			"label" : "Valid To"
+		}
+	]
+}
