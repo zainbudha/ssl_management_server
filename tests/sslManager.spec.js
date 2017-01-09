@@ -1,10 +1,16 @@
 var chai = require('chai');
 var expect = chai.expect; // we are using the "expect" style of Chai
 var ssl = require('../sslManager.js');
-
+var fs = require('fs');
 
 
 describe('SSL Manager test', function() {
+  before(function() {
+	if (!fs.existsSync('./tests/testSsls')){
+		fs.mkdirSync('./tests/testSsls');
+	}  
+  });
+  
   beforeEach(function() {
 	ssl.deleteAll();
   });
